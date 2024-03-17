@@ -1,0 +1,69 @@
+
+  /* Ajouter du style personnalisé ici */
+  .navbar {
+    transition: background-color 0.3s ease; /* Ajouter une transition pour une animation fluide */
+  }
+
+  .navbar-nav .nav-link {
+    color: #000000; /* Couleur du texte des liens */
+    font-size: 18px; /* Taille de la police des liens */
+    
+    
+  }
+  .navbar-nav .nav-link:hover {
+    
+    text-decoration: underline var(--red-highlight);
+    text-underline-offset: 0.25rem;
+    text-decoration-thickness: 0.188rem;
+  }
+.appBar{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0 1rem 3rem;
+    position: sticky;
+    top: 0;
+    background-color: var(--white);
+   
+}
+
+.appBar__icon{
+    width: 4.5rem;
+    height: 4.5rem;
+
+}
+.appBar__nav{
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+.appBar__navItems{
+    font-family: var(--title-font);
+    font-style: normal;
+    font-weight: var(--title-font-weight);
+    font-size: var(--title-font-size);
+    list-style: var(--title-line-height);
+    color: var(--black);
+    margin-right: 1rem;
+}
+.appBar__navItems:hover,
+.appBar__navItems.active{
+    text-decoration: underline var(--red-highlight);
+    text-underline-offset: 0.25rem;
+    text-decoration-thickness: 0.188rem;
+}
+
+@media (max-width: 768px) {
+    .appBar {
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: center;
+    }
+    .appBar__icon{
+        width: 3rem;
+        height: 3rem;
+    }
+    .appBar__nav{
+
+        padding-left: 1rem;
+    }
+}
